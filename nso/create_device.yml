@@ -1,0 +1,24 @@
+- name: Configure device
+  hosts: localhost
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: CREATE DEVICE IN NSO
+      cisco.nso.nso_config:
+        url: https://10.10.20.49/jsonrpc
+        username: developer
+        password: C1sco12345
+        data:
+          tailf-ncs:devices:
+            device:
+            - address: 10.10.20.175
+              description: CONFIGURED BY ANSIBLE!
+              name: dist-rtr01
+              authgroup: "labadmin"
+              device-type:
+                cli:
+                  ned-id: "cisco-ios-cli-6.44"
+              port: "22"
+              state:
+                admin-state: "unlocked"
