@@ -1,5 +1,6 @@
 - name: Configure device
   hosts: nso
+  connection: httpapi
   gather_facts: no
 
   tasks:
