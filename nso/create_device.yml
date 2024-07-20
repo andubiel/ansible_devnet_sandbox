@@ -1,5 +1,5 @@
 - name: Configure device
-  hosts: localhost
+  hosts: nso
   connection: local
   gather_facts: no
 
