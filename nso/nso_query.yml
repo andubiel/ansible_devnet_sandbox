@@ -6,6 +6,9 @@
   tasks:
     - name: CREATE DEVICE IN NSO
       cisco.nso.nso_config:
+        url: https://10.10.20.49/jsonrpc
+        username: developer
+        password: C1sco12345
         data:
           tailf-ncs:devices:
             device:
