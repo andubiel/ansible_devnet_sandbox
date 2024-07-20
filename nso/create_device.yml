@@ -22,3 +22,17 @@
               port: "22"
               state:
                 admin-state: "unlocked"
+      ignore_errors: yes 
+
+    - name: DISPLAY DEVICE INCLUDING OPERATIONAL DATA
+      cisco.nso.nso_show:
+        url: https://10.10.20.49/jsonrpc
+        username: developer
+        password: C1sco12345
+        path: /ncs:devices/device{dist-rtr01}
+        operational: true
+      register: result
+
+    - name: Display the result
+      debug:
+        var: result
