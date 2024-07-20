@@ -12,9 +12,9 @@
         data:
           tailf-ncs:devices:
             device:
-            - address: 10.10.20.175
+            - address: 10.10.20.176
               description: CONFIGURED BY ANSIBLE!
-              name: dist-rtr01
+              name: dist-rtr02
               authgroup: "labadmin"
               device-type:
                 cli:
