@@ -18,7 +18,7 @@
               authgroup: "labadmin"
               device-type:
                 cli:
-                  ned-id: "cisco-ios-cli-6.44"
+                  ned-id: "cisco-ios-cli-6.90"
               port: "22"
               state:
                 admin-state: "unlocked"
