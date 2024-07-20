@@ -6,6 +6,9 @@
   tasks:
     - name: CREATE DEVICE IN NSO
       cisco.nso.nso_config:
+        url: "{{ url }}"
+        username: "{{ username }}"
+        password: "{{ password }}"
         data:
           tailf-ncs:devices:
             device:
