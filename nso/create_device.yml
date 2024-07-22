@@ -1,5 +1,6 @@
 - name: Configure device
   hosts: nso
+  connection: local
   gather_facts: no
 
   tasks:
