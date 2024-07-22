@@ -1,6 +1,5 @@
 - name: Configure device
   hosts: nso
-  connection: httpapi
   gather_facts: no
 
   tasks:
@@ -12,7 +11,7 @@
         data:
           tailf-ncs:devices:
             device:
-            - address: 10.10.20.176
+            - address: 10.10.20.175
               description: CONFIGURED BY ANSIBLE!
               name: dist-rtr02
               authgroup: "labadmin"
