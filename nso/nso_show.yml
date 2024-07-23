@@ -13,7 +13,7 @@
         url: "{{ url }}"
         username: "{{ username }}"
         password: "{{ password }}"
-        path: /ncs:devices/device{'{{item}}'}
+        path: /ncs:devices/device{{{item}}}
         operational: true
       register: result
       loop: "{{ devices }}"
@@ -27,7 +27,7 @@
         url: "{{ url }}"
         username: "{{ username }}"
         password: "{{ password }}"
-        path: /ncs:devices/device{ '{{item}}'  }/config/interface
+        path: /ncs:devices/device{{{item}}}/config/interface
         operational: true
       register: result
       loop: "{{ devices }}"
