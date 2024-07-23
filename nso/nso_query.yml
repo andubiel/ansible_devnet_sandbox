@@ -4,7 +4,7 @@
   gather_facts: no
 
   tasks:
-    - name: CREATE DEVICE IN NSO
+    - name: QUERY DEVICES IN NSO
       cisco.nso.nso_query:
         url: "{{ url }}"
         username: "{{ username }}"
